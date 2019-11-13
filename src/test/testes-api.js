@@ -170,4 +170,3 @@ describe('Testando conversão de K para K', () => {
 			});
 	});
 });
-

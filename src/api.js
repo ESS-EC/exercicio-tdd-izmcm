@@ -99,14 +99,17 @@ app.get('/converterTemperatura', (req,res) => {
 		}
 	}
 
+	// res.end();
+	res.connection.destroy();
+
 });
 
-app.listen(5000, (err)=>{
-    if(err) {
-        console.log('Failed localhost:5000');
-    } else{
-        console.log('Running...')
-    }
-})
+// app.listen(8080, (err)=> {
+//     if(err) {
+//         console.log('Failed localhost:8080');
+//     } else{
+//         console.log('Running...')
+//     }
+// })
 
 module.exports = app;
