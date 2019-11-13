@@ -3,4 +3,4 @@ node_js:
   - "stable"
 caches:
   directories:
-    - node_modules
+    - "node_modules"
