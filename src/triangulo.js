@@ -4,7 +4,6 @@ function Triangulo(a,b,c) {
     this.c = c;
 }
 
-
 // Para construir um triângulo é necessário que a 
 // medida de qualquer um dos lados seja menor que a 
 // soma das medidas dos outros dois e maior que o valor 

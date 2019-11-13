@@ -60,7 +60,24 @@ describe('Verificando se é válido', () => {
 	var b = 7;
     var c = 7;
     
-	it('Teste: Os três lados são diferentes', (done) => {
+	it('Teste: Os três lados impossíveis', (done) => {
+		chai.request(api)
+			.get('/triangulo?lado1='+ a +'&lado2=' + b + '&lado3=' + c)
+			.end((err, res) => {
+				res.should.have.status(200);
+				res.body.should.have.property('tipo').eql('Invalido');
+				done();
+			});
+	});
+});
+
+
+describe('Verificando se é válido', () => {
+    var a = "a";
+	var b = 7;
+    var c = 7;
+    
+	it('Teste: Lado com string', (done) => {
 		chai.request(api)
 			.get('/triangulo?lado1='+ a +'&lado2=' + b + '&lado3=' + c)
 			.end((err, res) => {
