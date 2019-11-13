@@ -2,7 +2,7 @@ function Triangulo(a,b,c) {
     this.a = a;
     this.b = b;
     this.c = c;
-  }
+}
 
 
 // Para construir um triângulo é necessário que a 
@@ -34,7 +34,7 @@ Triangulo.prototype.tipo = function () {
 }
   
 Triangulo.prototype.toString = function () {
-return `Lado A ${this.a}, Lado B ${this.b}, Lado C ${this.c}`
+	return `Lado A ${this.a}, Lado B ${this.b}, Lado C ${this.c}`
 };
 
 

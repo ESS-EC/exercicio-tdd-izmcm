@@ -98,10 +98,6 @@ app.get('/converterTemperatura', (req,res) => {
 			});
 		}
 	}
-
-	// res.end();
-	res.connection.destroy();
-
 });
 
 // app.listen(8080, (err)=> {
