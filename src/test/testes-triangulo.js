@@ -3,7 +3,6 @@ const Triangulo = require('../triangulo');
 
 const assert = chai.assert;
 
-
 describe('Verificando se é escaleno', () => {
   it('Teste: Os três lados são diferentes', () => {
     let triangulo = new Triangulo(7, 5, 10)
